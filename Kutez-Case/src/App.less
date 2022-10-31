@@ -1,0 +1,70 @@
+@import '~antd/dist/antd.less';
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #2B2E39;
+  background-image: linear-gradient(60deg, #AC6EFF 70%, #2414DB);
+  background-repeat: no-repeat;
+}
+
+#root {
+  height: 100vh;
+}
+
+h1 {
+  font-size: 43pt;
+  font-weight: bold;
+  color: inherit;
+}
+
+h2 {
+  font-size: 85pt;
+  font-weight: bold;
+  line-height: 1.25;
+  color: inherit;
+}
+
+button {
+  background-image: linear-gradient(to right, #AC6EFF, #2414DB);
+  border-radius: 100%;
+  padding-left: 50pt !important;
+  padding-right: 50pt !important;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: white;
+  border-radius: 0 20% 20% 0;
+  margin-right: 30%;
+  padding: 20pt 10% 20pt 5%;
+
+  .calculator-wrapper {
+    margin: auto 0;
+
+    .calculator {
+      display: flex;
+      flex-direction: column;
+
+      .fields {
+        display: flex;
+        gap: 20pt;
+
+        & > * {
+          flex: 1;
+        }
+      }
+
+      button {
+        margin-top: 60pt;
+      }
+    }
+  }
+}
+
+::placeholder, .ant-select-selection-placeholder {
+  font-size: 27pt !important;
+  color: #8D9092 !important;
+  font-weight: 500 !important;
+}
